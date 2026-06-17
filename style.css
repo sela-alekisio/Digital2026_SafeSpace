@@ -4,3 +4,42 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6 {
+    margin: 10px 0;
+}
+
+.image1, .image2, .image3 {
+    background-color: #eee;
+    height: 200px;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
