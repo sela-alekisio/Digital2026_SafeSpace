@@ -12,9 +12,21 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navbar navbar"
+        "banner banner"
+        "image1 text1"
+        "image2 text2"
+        "image3 text3"
+        "text4 text5"
+        "footer footer";
 }
 
+
 .navbar {
+    grid-area: navbar;
     background-color: #f4f4f4;
     list-style-type: center;
     margin: 10px;
@@ -22,19 +34,56 @@ body {
 }
 
 .banner {
+    grid-area: banner;
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
 }
 
-.text1, .text2, .text3, .text4, .text5, .text6 {
-    margin: 10px 0;
+.text1{
+    grid-area: text1;
 }
 
-.image1, .image2, .image3 {
+.image1{
+    grid-area: image1;
     background-color: #eee;
     height: 200px;
     margin: 10px 0;
+}
+
+.text2{
+    grid-area: text2;
+}
+
+.image2{
+    grid-area: image2;
+    background-color: #eee;
+    height: 200px;
+    margin: 10px 0;
+}
+
+.image3{
+    grid-area: image3;
+    background-color: #eee;
+    height: 200px;
+    margin: 10px 0;
+}
+
+.text3{
+    grid-area: image3;
+    
+}
+
+.text3{
+    grid-area: text3;
+}
+
+.text4{
+    grid-area: text4;
+}
+
+.text5{
+    grid-area: text5;
 }
 
 .footer {
