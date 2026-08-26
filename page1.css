@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #D0F3F4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@ body {
     grid-template-areas: 
         "navbar navbar"
         "banner banner"
-        "text1 image1"
+        "text1 text1"
         "text2 image2"
         "image3 text3"
         "text4 text5"
@@ -26,13 +26,42 @@ body {
 }
 
 .navbar {
-   grid-area: navbar;
-   background-color:  #f4f4f4;
-   list-style-type: center;
-   margin: 10px;
-   padding: 20px;; 
+    grid-area: navbar;
+    background-color: #f4f4f4;
+    margin: 50px;
+    padding: 25px;
+    align-items: center;
 }
 
-.banner {
-    
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.image2 {
+    grid-area: image2;
+
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.text4 {
+    grid-area: text4;
+}
+
+.text5 {
+    grid-area: text5;
+}
+
+.footer {
+    grid-area: footer;
 }
