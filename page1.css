@@ -1,0 +1,38 @@
+body {
+    background-color:EAF4F4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navbar navbar"
+        "banner banner"
+        "text1 image1"
+        "text2 image2"
+        "image3 text3"
+        "text4 text5"
+        "footer footer";
+
+}
+
+.navbar {
+   grid-area: navbar;
+   background-color:  #f4f4f4;
+   list-style-type: center;
+   margin: 10px;
+   padding: 20px;; 
+}
+
+.banner {
+    
+}
