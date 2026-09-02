@@ -6,13 +6,14 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    display: grid;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #D0F3F4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "navbar navbar"
@@ -22,17 +23,85 @@ body {
         "image3 text3"
         "text4 text5"
         "footer footer";
+}
 
+.body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(248, 223, 184)
+    color rgb(26, 99, 38);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    grid-area: navbar;
+    width:90%;
+    height: 75px;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+
+ 
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.menu {
+    width:65%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.menu li a{
+    font-size: 19px;
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ccc;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
 }
 
 .navbar {
     grid-area: navbar;
-    background-color: #f4f4f4;
-    margin: 50px;
-    padding: 25px;
-    align-items: center;
+    padding: 20px;
+    width: 710px;
+    height: 200px;
+    text-align: center;
 }
 
+.banner{
+    grid-area: banner;
+    padding: 20px;
+    width: 710px;
+    height: 200px;
+    text-align: center;
+}
 .text1 {
     grid-area: text1;
 }
@@ -43,11 +112,21 @@ body {
 
 .image2 {
     grid-area: image2;
+    max-width: 250px;
+    width: 450px;
+    height: 250px;
+    object-fit: contain;
+    vertical-align: middle;
 
 }
 
 .image3 {
     grid-area: image3;
+    max-width: 250px;
+    width: 450px;
+    height: 250px;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
 .text3 {
