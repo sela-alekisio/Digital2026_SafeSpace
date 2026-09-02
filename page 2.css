@@ -1,0 +1,114 @@
+body {
+    background-color:EAF4F4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:#D0F3F4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px ;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navbar navbar"
+        "image1 text1"
+        "image2 text2"
+        "image3 text3"
+        "image4 text4"
+        "image5 text5"
+        "footer footer";
+
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #f4f4f4;
+    margin: 50px;
+    padding: 25px;
+    align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+
+
+.image1{
+    grid-area: image1;
+    background-color: #eee;
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+
+}
+
+.text1{
+    grid-area: text1;
+    flex: 1;
+
+}
+
+.image2{
+    grid-area: image2;
+    background-color: #eee;
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.text2{
+    grid-area: text2;
+}
+
+.image3{
+    grid-area: image3;
+    background-color: #eee;
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text3{
+    grid-area: text3;
+}
+
+.image4{
+    grid-area: image4;
+    background-color: #eee;
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text4 {
+    grid-area: text4;
+}
+
+.image5 {
+    grid-area: image5;
+    background-color: #eee;
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
