@@ -6,89 +6,164 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    display: grid;
     margin: 0 auto;
-    background-color: #fff;
+    background-color:#D0F3F4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-        "navbar navbar"
-        "banner banner"
-        "image1 text1"
-        "image2 text2"
-        "image3 text3"
-        "text4 text5"
-        "footer footer";
+    grid-template-areas:
+    "navbar navbar"
+    "banner banner"
+    "image_1 text_1"
+    "image2 text2"
+    "image3 text3"
+    "text4 text5"
+    "footer footer"; 
+}
+
+.body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(248, 223, 184)
+    color rgb(26, 99, 38);
 }
 
 
-.navbar {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
     grid-area: navbar;
-    background-color: #f4f4f4;
-    list-style-type: center;
-    margin: 10px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo menu search";
+    margin: 0;
+    padding: 0;
+
+}
+
+ 
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    width: 10%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    justify-content: right;
+    list-style: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 15px
+}
+
+.menu li a{
+    font-size: 19px;
+    color:#fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ccc;
+}
+
+.search {
+    grid-area: search;
+    text-align: right;
 }
 
 .banner {
     grid-area: banner;
-    background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
 }
 
-.text1{
-    grid-area: text1;
+.text_1{
+    grid-area: text_1;
+    padding: 45px;
+
 }
 
-.image1{
-    grid-area: image1;
-    background-color: #eee;
-    height: 200px;
-    margin: 10px 0;
+.image_1{
+    grid-area: image_1;
+    max-width: 250px;
+    width: 450px;
+    height: 250px;
+    object-fit: contain;
 }
 
 .text2{
     grid-area: text2;
+    padding: 45px;
+    margin: 20px;
+    font-size: 18px;
 }
 
 .image2{
     grid-area: image2;
-    background-color: #eee;
-    height: 200px;
-    margin: 10px 0;
+    max-width: 400px;
+    width: 450px;
+    height: 250px;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
 .image3{
     grid-area: image3;
-    background-color: #eee;
-    height: 200px;
-    margin: 10px 0;
+    max-width: 400px;
+    width: 450px;
+    height: 250px;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
-.text3{
-    grid-area: image3;
-    
-}
 
 .text3{
     grid-area: text3;
+    padding: 25px;
 }
 
 .text4{
     grid-area: text4;
+    padding : 25px;
 }
 
 .text5{
     grid-area: text5;
+    padding: 25px;
 }
 
 .footer {
-    background-color: #f4f4f4;
+    grid-area: footer;
     color: black;
     padding: 3px;
     text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
