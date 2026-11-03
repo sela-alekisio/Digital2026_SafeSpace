@@ -1,5 +1,5 @@
 body {
-    background-color:cadetblue;
+    background-color: #335354;
     margin: 0;
     padding: 30px;
 }
@@ -69,9 +69,9 @@ body {
 .menu li a {
     display: block;
     text-decoration: none;
-    color: #4b9fa3;
+    color: #335354;
     background-color: white;
-    border: 2px solid #4b9fa3;
+    border: 2px solid #335354;
     padding: 10px 20px;
     border-radius: 1%;
     font-size: 16px;
@@ -79,7 +79,7 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #4b9fa3;
+    background-color: #335354;
     color: white;
 }
 
@@ -99,28 +99,28 @@ body {
 .search input {
     width: 180px;
     padding: 8px 12px;
-    border: 2px solid #4b9fa3;
+    border: 2px solid #335354;
     border-radius: 20px;
     outline: none;
     font-size: 14px;
 }
 
 .search input:focus {
-    border-color: #26777b;
+    border-color: #335354;
 }
 
 .search button {
     padding: 8px 15px;
     border: none;
     border-radius: 20px;
-    background-color: #4b9fa3;
+    background-color:  #335354;
     color: white;
     cursor: pointer;
     font-size: 14px;
 }
 
 .search button:hover {
-    background-color: #26777b;
+    background-color: #335354;
 }
 
 /* Burger button */
@@ -153,7 +153,7 @@ body {
 .banner h1 {
     font-family:"Angelone", cursive;
     font-size: 52px;
-    color:  cadetblue;
+    color:  #335354;
    
 }
 
@@ -186,7 +186,7 @@ body {
 
 .footer {
     grid-area: footer;
-    background-color: cadetblue;
+    background-color: #335354;
     color: white;
     padding: 40px 30px 20px;
     box-sizing: border-box;
@@ -250,13 +250,6 @@ img{
     cursor: pointer;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .logo img {
     max-width: 75px;
     width: 100%;
@@ -282,7 +275,7 @@ img {
    TABLETS
 ========================= */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
 
     .container {
         width: 100%;
@@ -347,6 +340,7 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .menu-toggle {

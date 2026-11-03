@@ -1,5 +1,5 @@
 body {
-    background-color:cadetblue;
+    background: #335354;
     margin: 0;
     padding: 30px;
 }
@@ -79,9 +79,9 @@ body {
 .menu li a {
     display: block;
     text-decoration: none;
-    color: #4b9fa3;
+    color: #335354;
     background-color: white;
-    border: 2px solid #4b9fa3;
+    border: 2px solid #335354;
     padding: 10px 20px;
     border-radius: 1%;
     font-size: 16px;
@@ -89,7 +89,7 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #4b9fa3;
+    background-color: #335354;
     color: white;
 }
 
@@ -98,7 +98,7 @@ body {
     display: none;
     background: none;
     border: none;
-    color: #3c5a7c;
+    color: #335354;
     font-size: 30px;
     cursor: pointer;
     padding: 5px;
@@ -123,7 +123,7 @@ body {
 .banner h1 {
     font-family:"Angelone", cursive;
     font-size: 52px;
-    color:  cadetblue;
+    color:  #335354;
    
 }
 
@@ -141,14 +141,14 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: cadetblue;
+    background-color: #335354;
     color: white;
     font-size: 15px;
     margin-top: 10px;
 }
 
 #collapseButton1:hover, #collapseButton3:hover {
-    background-color: #26777b;
+    background-color: #335354;
 }
 
 .motivation-box {
@@ -156,13 +156,13 @@ body {
     text-align: center;
     padding: 25px;
     margin: 30px;
-    border: 3px solid cadetblue;
+    border: 3px solid #335354;
     border-radius: 10px;
 }
 
 .motivation-box button {
     padding: 10px 20px;
-    background-color: cadetblue;
+    background-color: #335354;
     color: white;
     border: none;
     border-radius: 10px;
@@ -170,7 +170,7 @@ body {
 }
 
 .motivation-box button:hover {
-    background-color: #26777b;
+    background-color: #335354;
 }
 
 .relate-buttons {
@@ -185,20 +185,21 @@ body {
     padding: 10px 18px;
     border: none;
     border-radius: 8px;
-    background-color: cadetblue;
+    background-color: #335354;
     color: white;
     cursor: pointer;
 }
 
 .relate-buttons button:hover {
-    background-color: #26777b;
+    background-color: #335354;
 }
 
 #relateMessage {
     text-align: center;
     padding: 15px;
     border-radius: 8px;
-    background-color: cadetblue;
+    background-color: #335354;
+    color: white;
 }
 
 
@@ -216,7 +217,7 @@ body {
     padding: 20px;
     font-size: 95%;
     line-height:2;
-    border: 5px solid cadetblue;
+    border: 5px solid #335354;
     border-radius: 1px;
     margin: 30px auto;
 }
@@ -229,7 +230,7 @@ body {
 
 .footer {
     grid-area: footer;
-    background-color: cadetblue;
+    background-color: #335354;
     color: white;
     padding: 40px 30px 20px;
     box-sizing: border-box;
@@ -257,7 +258,7 @@ footer p {
 }
 
 footer a {
-    color: #b8f2e6;
+    color: #335354;
     text-decoration: none;
     font-weight: bold;
 }
@@ -280,7 +281,7 @@ footer a:hover {
     grid-area: privacy;
     grid-column: 1 / -1;
     background-color: #D0F3F4;
-    border: 4px solid cadetblue;
+    border: 4px solid#335354;
     border-radius: 8px;
     padding: 25px;
     margin: 30px auto;
@@ -290,7 +291,7 @@ footer a:hover {
 }
 
 .privacy h3 {
-    color: cadetblue;
+    color: #335354;
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -432,7 +433,7 @@ img{
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        width: 100%;
+        width: 100px;
         gap: 8px;
     }
 
