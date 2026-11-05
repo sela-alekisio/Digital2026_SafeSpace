@@ -35,50 +35,54 @@ body {
 
 
 
+/* NAVBAR */
 .navbar {
     grid-area: navbar;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
     margin: 20px 0;
     padding: 10px;
 }
 
-/* Logo */
+/* LOGO */
 .logo {
     flex: 1;
 }
 
 .logo img {
     width: 70px;
+    max-width: 100%;
     height: auto;
+    display: block;
 }
 
-/* Navigation */
+/* NAVIGATION */
 .menu {
-    flex: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu li {
-    margin: 0;
-}
-
 .menu li a {
     display: block;
     text-decoration: none;
-    color: #4b9fa3;
+    color: #335354;
     background-color: white;
-    border: 2px solid #4b9fa3;
+    border: 2px solid #335354;
     padding: 10px 20px;
     border-radius: 1%;
     font-size: 16px;
@@ -86,62 +90,21 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #4b9fa3;
+    background-color: #335354;
     color: white;
 }
 
-/* Search */
-.search {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.search form {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.search input {
-    width: 180px;
-    padding: 8px 12px;
-    border: 2px solid #4b9fa3;
-    border-radius: 20px;
-    outline: none;
-    font-size: 14px;
-}
-
-.search input:focus {
-    border-color: #26777b;
-}
-
-.search button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: #4b9fa3;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.search button:hover {
-    background-color: #26777b;
-}
-
-/* Burger button */
+/* BURGER BUTTON */
 .menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: #3c5a7c;
+    color: #335354;
     font-size: 30px;
     cursor: pointer;
     padding: 5px;
     line-height: 1;
 }
-
 
 .banner {
     grid-area: banner;
@@ -161,7 +124,23 @@ body {
 .banner h1 {
     font-family:"Angelone", cursive;
     font-size: 52px;
-    color: cadetblue;
+    color:  #335354;
+   
+}
+
+
+@font-face {
+    font-family: "Angelone";
+    src: url(fonts/Angelone-2vXp8.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.banner h1 {
+    font-family:"Angelone", cursive;
+    font-size: 52px;
+    color: #335354;
 }
 
 
@@ -183,14 +162,14 @@ body {
 .text1, .text2, .text3, .text4, .text5 {
     padding: 20px;
     line-height: 3;
-    border: 5px solid cadetblue;
+    border: 5px solid  #335354;
     border-radius: 1px;
     margin: 30px auto;
 }
 
 .footer {
     grid-area: footer;
-    background-color: cadetblue;
+    background-color: #335354;
     color: white;
     padding: 40px 30px 20px;
     box-sizing: border-box;
@@ -218,7 +197,7 @@ footer p {
 }
 
 footer a {
-    color: #b8f2e6;
+    color: #335354;
     text-decoration: none;
     font-weight: bold;
 }

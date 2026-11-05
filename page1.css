@@ -32,55 +32,70 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* NAVBAR */
 .navbar {
     grid-area: navbar;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
     margin: 20px 0;
     padding: 10px;
 }
 
-/* Logo */
+/* LOGO */
 .logo {
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
-/* Navigation */
+.logo img {
+    width: 70px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* NAVIGATION MENU */
 .menu {
-    flex: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu li {
-    margin: 0;
-}
-
 .menu li a {
     display: block;
     text-decoration: none;
-    color: #335354;
+    color: #4b9fa3;
     background-color: white;
-    border: 2px solid #335354;
+    border: 2px solid #4b9fa3;
     padding: 10px 20px;
-    border-radius: 1%;
     font-size: 16px;
     transition: 0.3s ease;
 }
 
 .menu li a:hover {
-    background-color: #335354;
+    background-color: #4b9fa3;
     color: white;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
 }
 
 /* Search */
